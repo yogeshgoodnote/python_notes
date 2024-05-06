@@ -4,3 +4,11 @@ mysql connector installation
 cmd prompt C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>python -m pip install mysql-connector-python
 cmd C:\Users\pc>pip install django(django installation)
 pip freeze // to see installed packages
+cmd prompt 
+C:\Users\pc>cd C:\Users\pc\Documents\djangoproject\mysite
+To run server on cmd
+C:\Users\pc\Documents\djangoproject\mysite>python manage.py runserver
+
+ to see go on URL http://127.0.0.1:8000/
+to stop server got to cmd
+press ctrl+c
