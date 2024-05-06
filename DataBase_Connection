@@ -2,3 +2,5 @@ Python Location where is installed
 c:\Users\pc\AppData\Local\Programs\Python\Python312>
 mysql connector installation
 cmd prompt C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>python -m pip install mysql-connector-python
+cmd C:\Users\pc>pip install django(django installation)
+
