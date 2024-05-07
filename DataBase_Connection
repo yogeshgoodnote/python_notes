@@ -12,3 +12,5 @@ C:\Users\pc\Documents\djangoproject\mysite>python manage.py runserver
  to see go on URL http://127.0.0.1:8000/
 to stop server got to cmd
 press ctrl+c
+to make migration //to create table
+new terminal in vscode C:\Users\pc\Documents\djangoproject> cd .\mysite\
