@@ -56,4 +56,27 @@ urlpatterns = [
 ]
 
 create Dynamic URLs in django
-
+jaise blog URL
+product page URL
+there are three types of dynamic URL
+(1) str ab,sh
+(2) int 1,2,
+(3) Slug about-us
+urls.py
+from django.contrib import admin
+from django.urls import path
+from mysite import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('about-us/', views.aboutus),
+    path('contact-us/', views.contact),
+    path('product-page/<int:productid>',views.ProductDetails)
+]
+views.py
+from django.http import HttpResponse
+def aboutus(request):
+    return HttpResponse("wellcome to mysite")
+def contact(request):
+    return HttpResponse("Contact us page")
+def ProductDetails(request,productid):
+    return HttpResponse(productid)
