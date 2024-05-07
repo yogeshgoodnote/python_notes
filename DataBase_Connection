@@ -99,4 +99,20 @@ TEMPLATES = [
         },
     },
 ]
-
+3. add html files into templates folder
+ ex login.html
+4. url.py
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('login', views.login_page),
+    path('about-us/', views.aboutus),
+    path('contact-us/', views.contact),
+    path('product-page/<int:productid>',views.ProductDetails)
+]
+5.views.py
+from django.http import HttpResponse
+from django.shortcuts import render
+def loginpage(request):
+    return render(request,"login.html")
+def aboutus(request):
+    return HttpResponse("wellcome to mysite")
