@@ -26,7 +26,10 @@ views.py
 from django.http import HttpResponse
 def aboutus(request):
     return HttpResponse("wellcome to mysite")
+def contact(request):
+    return HttpResponse("Contact us page")
 urls.py
+*** changes only in the path
 """
 URL configuration for mysite project.
 
@@ -48,5 +51,6 @@ from django.urls import path
 from mysite import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about-us/',views.aboutus)
+    path('about-us/', views.aboutus),
+    path('contact-us/', views.contact)
 ]
