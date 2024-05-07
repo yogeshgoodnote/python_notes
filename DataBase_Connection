@@ -54,3 +54,6 @@ urlpatterns = [
     path('about-us/', views.aboutus),
     path('contact-us/', views.contact)
 ]
+
+create Dynamic URLs in django
+
