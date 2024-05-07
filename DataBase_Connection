@@ -15,3 +15,10 @@ press ctrl+c
 to make migration //to create table
 new terminal in vscode C:\Users\pc\Documents\djangoproject> cd .\mysite\
 PS C:\Users\pc\Documents\djangoproject\mysite> python manage.py migrate
+create super user
+PS C:\Users\pc\Documents\djangoproject\mysite> python manage.py createsuperuser
+user admin
+pswd Top@12345
+learn to create URLs & views
+got vscode
+add file name views.py into mysite folder
