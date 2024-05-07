@@ -23,6 +23,9 @@ learn to create URLs & views
 got vscode
 add file name views.py into mysite folder
 views.py
+
+
+
 from django.http import HttpResponse
 def aboutus(request):
     return HttpResponse("wellcome to mysite")
@@ -116,3 +119,19 @@ def loginpage(request):
     return render(request,"login.html")
 def aboutus(request):
     return HttpResponse("wellcome to mysite")
+
+Passing data from a Django view to template
+views.py
+from django.http import HttpResponse
+from django.shortcuts import render
+def loginpage(request):
+    data={
+        'title':'login Page2'
+    }
+    return render(request,"login.html",data)
+def aboutus(request):
+    return HttpResponse("wellcome to mysite")
+def contact(request):
+    return HttpResponse("Contact us page")
+def ProductDetails(request,productid):
+    return HttpResponse(productid)
