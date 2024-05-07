@@ -14,3 +14,4 @@ to stop server got to cmd
 press ctrl+c
 to make migration //to create table
 new terminal in vscode C:\Users\pc\Documents\djangoproject> cd .\mysite\
+PS C:\Users\pc\Documents\djangoproject\mysite> python manage.py migrate
