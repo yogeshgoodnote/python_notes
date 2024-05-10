@@ -19,3 +19,75 @@ obj=Multiple()
 obj.Display()
 
 Hybridinhertenc:It is combination of one or more than in heritence
+
+
+class A:
+    def __init__(self):
+        self
+        print("class A Constructor is invoke")
+    def classA(self):
+        print("class A method")
+class B(A):
+    def __init__(self):
+        print("class B Constructor is Invoke")
+    def classB(self):
+        print("class B Method")
+    
+class C(A):
+    def __init__(self):
+        print("class B Constructor is Invoke")
+    def classC(self):
+        print("class C Method")
+
+class D(B,C):
+    def __init__(self):
+        print("class D Constructor is Invoke")
+    def classD(self):
+        print("class D method")    
+
+obj=D()
+obj.classD()
+
+
+Example with Multiple Inheritance and Explicit Call to Parent Class
+class Base1:
+    def common_method(self):
+        print("Base1 common_method")
+
+class Base2:
+    def common_method(self):
+        print("Base2 common_method")
+
+class Derived(Base1, Base2):
+    pass
+
+# Create an instance of Derived
+d = Derived()
+
+# Explicit call to Base1's method
+Base1.common_method(d)  # Output: "Base1 common_method"
+
+# Explicit call to Base2's method
+Base2.common_method(d)  # Output: "Base2 common_method"
+
+in a function call, using super method
+class Base1:
+    def common_method(self):
+        print("Base1 common_method")
+
+class Base2:
+    def common_method(self):
+        print("Base2 common_method")
+
+class Derived(Base1, Base2):
+    def common_method(self):
+        # Using super() to call the next class in the MRO
+        super().common_method()
+        print("Derived common_method")
+
+# Create an instance of Derived and call common_method
+d = Derived()
+d.common_method()
+
+
+
