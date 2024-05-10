@@ -1,6 +1,202 @@
+Oops
+•	Class :
+ class is a blue print, it is used to create objects.
+To better understand class  we can take example of building blue print, with the help of building blue print we can create more than one buildings or objects.
+
+
+
+
+class  class_name:
+  properties =value//to store data 
+  def function_name(slef):// it is used to perform operation on class properties.
+	//Some code
+  deff __init__(slef):
+	//Some Code
+
+
+
+
+
+	
+  
+
+
+
+
+
+
+•	Object :   Object is real world entity or things such as building,
+    it has own properties such as dimension ,building _name,
+    Building current valuation etc.
+
+Obj=classname() 
+
+•	Encapsulation:
+•	inheritance
+•	abstraction
+•	polymorphism
+
+
+
+Encapsulation
+Encapsulation is the bundling of data and the methods that operate on that data into a single unit, called a class.
+Or
+Encapsulation means wrapping of data and methods into a single unit.
+Ex class
+Abstraction means showing only required things and hide the internal things.
+Ex Atm
+Polymorphism to is the ability of variable, object, or function to take on a multiple form.
+
+
+Polymorphism is a greek word whose meaning is same object having diffrent behaviour
+There are two types of polymorphism
+Method Overloading (Compile-time Polymorphism):
+Method overloading involves defining multiple methods with the same name in the same class but with different parameter lists. However, it's important to note that Python doesn't support traditional method overloading based on the number or types of parameters as seen in some other languages like Java or C++. Instead, Python allows a form of method overloading using default parameter values and variable-length argument lists.
+
+ 
+
+
+
+
+
+Method Overriding (Runtime Polymorphism):
+Method overriding involves providing a specific implementation for a method in a subclass that is already defined in its superclass. This is achieved by using the super() function and the @override decorator (though not strictly necessary).
+ 
+Class 
+Class is blueprint of objects.
+Ex Building –>Object
+Class ->Blue Print
+Object
+Object means a real word entity such as pen, chair, table etc
+For example: chair, pen, table, keyboard, bike etc. It can be physical and logical.
+
+
+
+
+
+
+What is Inheritance?
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class to inherit properties and behaviors from another class. In Python, as in many other object-oriented programming languages, inheritance is a key feature that promotes code reusability 
+Here's an overview of inheritance in Python:
+1. Basic Syntax:
+ 
+
+2. Types of Inheritance:
+
+
+There are many types of inheritance
+Single Inheritance:
+Definition: A class inherits from only one base class.
+ 
+
+Explanation: Dog is a subclass of Animal, and it inherits all the attributes and methods of the Animal class.
+
+Multiple Inheritance:
+Definition: 
+In multiple inheritance, a class can inherit from more than one base class. 
+This allows the derived class to inherit features from multiple parent classes.
+ 
+
+
+
+Multilevel Inheritance:
+In multilevel inheritance, a class is derived from another class, and then another class is derived from it, forming a chain of inheritance.
+ 
+
+
+Multilevel Inheritence
+
+class Person:
+    def __init__(self,name,age):
+        self.Name=name
+        self.Age=age
+class Emp(Person):
+    def __init__(self,name,age,e_id,sal):
+        super().__init__(name,age)
+        self.E_id=e_id
+        self.Sal=sal
+c
+lass PrintInfo(Emp):
+    def __init__(self,name,age,e_id,sal):
+        super().__init__(name,age,e_id,sal)
+        print("E_name=",self.Name)
+        print("E_Age=", self.Age)
+        print("E_id=",self.E_id)
+        print("Salary=",self.Sal)
+
+obj1=PrintInfo("Rohit",12,101,120000)
+
+Hierarchical Inheritance:
+
+When more than one derived class are created from a single base this type of inheritance is called hierarchical inheritance. In this program, we have a parent (base) class and two child (derived) classes.
+
+ 
+
+
+Python Functions
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+Creating a Function
+In Python a function is defined using the def keyword:
+
+ 
+
+Calling a Function
+ 
+Number of Arguments
+ 
+
+super() function returns a temporary object of the superclass, which allows you to call its methods.
+Self :It represents the instance of the object on
+
+
+
+
+
+Arguments
+Information can be passed into functions as arguments.
+ 
+
+
+
+
+Arbitrary Arguments, *args
+If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+
+ 
+Keyword Arguments
+You can also send arguments with the key = value syntax.
+This way the order of the arguments does not matter.
+ 
+Python Lambda
+A lambda function is a small anonymous function.
+
+A lambda function can take any number of arguments, but can only have one expression.
+Syntax
+lambda arguments : expression
+x = lambda a, b : a * b
+print(x(5, 6))
+
+Constructors in Python
+
+Constructors are generally used for instantiating an object. The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created. In Python the __init__() method is called the constructor and is always called when an object is created.
+
+Syntax of constructor declaration : 
+_ _init _ _(self): 				#(not space between Underscore)
+print(Default Constructor) 	#constructor Body
+
+Types of constructors : 
+
+1.	default constructor: The default constructor is a simple constructor which doesn’t accept any arguments. Its definition has only one argument which is a reference to the instance being constructed.
+
+2.	parameterized constructor: constructor with parameters is known as 
+parameterized constructor. The parameterized constructor takes its first argument as a reference to the instance being constructed known as self and the rest of the arguments are provided by the programmer.
+
+
 MRO method stands for method resolution order.
-It is search first display() method in own child class after left class and after right.
-it is avoid dimound problem
+It is the search first display() method in the own child class after the left class and after the right.
+it is to avoid diamond problem
 class A:
     def __init__(self):
         print("class A Constructor is invoke")
