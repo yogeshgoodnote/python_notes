@@ -1,0 +1,21 @@
+MRO method stands for method resolution order.
+It is search first display() method in own child class after left class and after right.
+it is avoid dimound problem
+class A:
+    def __init__(self):
+        print("class A Constructor is invoke")
+    def Display(self):
+        print("class A Display Method")
+class B:
+    def __init__(self):
+        print("class B Constructor is Invoke")
+    def Display(self):
+        print("class A Display Method")
+
+class Multiple(A,B):
+    pass    
+
+obj=Multiple()
+obj.Display()
+
+Hybridinhertenc:It is combination of one or more than in heritence
