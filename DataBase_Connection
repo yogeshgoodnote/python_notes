@@ -24,6 +24,8 @@ got vscode
 add file name views.py into mysite folder
 views.py
 
+* To create new project
+  cmd :django-admin startproject mywebsite2
 
 
 from django.http import HttpResponse
