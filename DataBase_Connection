@@ -26,6 +26,12 @@ views.py
 
 * To create new project
   cmd :django-admin startproject mywebsite2
+* To run server
+ * Go to the directory where the project file store
+   C:\Users\pc\Documents\djangoproject>cd mywebsite2
+    python manage.py runserver
+   Output
+   http://127.0.0.1:8000/
 
 
 from django.http import HttpResponse
