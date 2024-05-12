@@ -162,7 +162,8 @@ def aboutpage(request):
         'title':'Data Operation page',
        'kirana_list':['poha','shakar','good','shengdane'],
        'student':[{'name':'yogesh','phone_no':8120561801},{'name':'shyam','phone_no':810561801},
-                  {'name':'goverdhan','phone_no':812561801}]
+                  {'name':'goverdhan','phone_no':812561801}],
+       'numbers':[10,20,30,40]
     }
     return render(request,'aboutpage.html',data)
 Html page
@@ -175,4 +176,11 @@ Html page
             <tr>
              <td>{{sd.name}}</td> <td>{{sd.phone_no}}</td>
             </tr>
+            {% endfor %}
+
+if statement in html page
+{% for n in numbers %}
+            {% if n > 30 %}
+               {{n}}
+               {% endif %}
             {% endfor %}
