@@ -94,7 +94,7 @@ def contact(request):
 def ProductDetails(request,productid):
     return HttpResponse(productid)
 
-rendering html page
+to rendering html page
 1 create template folder in in root directort called templates
 2 open setting.py change with  'DIRS': [BASE_DIR,"templates"],
 TEMPLATES = [
