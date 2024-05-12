@@ -1,3 +1,4 @@
+
 Python Location where is installed
 c:\Users\pc\AppData\Local\Programs\Python\Python312>
 mysql connector installation
@@ -154,3 +155,24 @@ html Page
 <div>{{l}}</div>
 {% endforloop %}
 </body>
+
+* render data using table
+def aboutpage(request):
+    data={
+        'title':'Data Operation page',
+       'kirana_list':['poha','shakar','good','shengdane'],
+       'student':[{'name':'yogesh','phone_no':8120561801},{'name':'shyam','phone_no':810561801},
+                  {'name':'goverdhan','phone_no':812561801}]
+    }
+    return render(request,'aboutpage.html',data)
+Html page
+<table border="1" cellpading="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Phonr number</th>
+            </tr>
+            {% for sd in student %}
+            <tr>
+             <td>{{sd.name}}</td> <td>{{sd.phone_no}}</td>
+            </tr>
+            {% endfor %}
