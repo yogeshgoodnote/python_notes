@@ -148,3 +148,9 @@ def ProductDetails(request,productid):
 
 html Page
  <title>{{title}}</title>
+ * To render data using loop
+<body>
+{% for l in kirana_list %}
+<div>{{l}}</div>
+{% endforloop %}
+</body>
