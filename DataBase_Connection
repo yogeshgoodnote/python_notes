@@ -184,3 +184,4 @@ if statement in html page
                {{n}}
                {% endif %}
             {% endfor %}
+ * Add a static file into mywebsite2 folder
