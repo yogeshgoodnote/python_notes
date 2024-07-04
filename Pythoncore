@@ -27,7 +27,12 @@ Features of Python
 *both procedure and object-oriented 
 *interpreted 
 *extensible -add code to another language 
-*extensibve
+*extensible 
+
+cons 
+(1) not recommended for mobile development  
+(2) slow performance(interpreter)
+
 
 
 
